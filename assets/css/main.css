@@ -78,4 +78,26 @@
          font-display: swap;
          font-style: normal;
   }
+  
+  body{
+    @apply font-clashR;
+  }
+  section{
+    @apply px-6
+  }
+
+  .hero{
+    background: url(../images/img-hero-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+  }
+  @media screen and (min-width:768px) {
+    .hero{
+      background: url(../images/img-hero.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      /* background-size: contain; */
+    }
+  }
 }
