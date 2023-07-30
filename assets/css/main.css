@@ -86,12 +86,29 @@
     @apply px-6
   }
 
+  .swiper {
+    width: auto;
+    height: auto;
+  }
+  .swiper-slide{
+    width: auto !important;
+  }
+
   .hero{
     background: url(../images/img-hero-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: contain; */
   }
+
+  .img-sector{
+    max-width: 243px;
+  }
+
+  .projects ul::-webkit-scrollbar{
+    /* display: none; */
+  }
+  
   @media screen and (min-width:768px) {
     .hero{
       background: url(../images/img-hero.png);
@@ -99,5 +116,13 @@
       background-position: center;
       /* background-size: contain; */
     }
+
+    .img-sector{
+      max-width: 100%;
+    }
   }
+}
+
+.swiper-pagination-bullet{
+  background: #000 !important;
 }
