@@ -108,6 +108,13 @@
   .projects ul::-webkit-scrollbar{
     /* display: none; */
   }
+
+  .man-prof{
+    @apply w-16 h-16 opacity-50
+  }
+  .man-prof.active{
+    @apply w-20 h-20 opacity-100 border-amber-500 border-[2.5px]
+  }
   
   @media screen and (min-width:768px) {
     .hero{
