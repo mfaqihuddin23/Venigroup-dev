@@ -152,80 +152,45 @@
         <img class="rounded-lg" src="../assets/images/img-map.png" />
       </div>
       <div class="flex flex-col-reverse md:flex-row justify-between gap-8">
-        <div class="grow shrink basis-0 flex-col justify-between items-start flex gap-12">
+        <div class="grow shrink basis-0 flex flex-col justify-between items-start ">
           <div class="flex flex-col gap-2 md:gap-4">
             <div class="text-neutral-500 text-sm md:text-lg font-clashM font-medium uppercase leading-[145%]">Contact Us</div>
             <div class="text-stone-900 text-2xl md:text-5xl font-clashS font-semibold uppercase leading-[120%]">Our locations</div>
             <div class="text-neutral-500 text-sm md:text-lg font-medium leading-[160%]">Come visit our friendly team at one of our offices.</div>
           </div>
-          <div class="self-stretch flex-col justify-start items-center gap-12 flex">
-            <div class="self-stretch flex-col justify-center items-start gap-6 flex">
-              <div class="self-stretch h-[98px] flex-col justify-start items-start gap-2 flex">
-                  <div class="self-stretch h-[98px] flex-col justify-start items-start gap-2 flex">
-                      <div class="text-neutral-500 text-lg font-medium leading-[28.80px]">Full name</div>
-                      <div class="self-stretch px-6 py-4 bg-white rounded-lg shadow border border-zinc-200 justify-start items-center gap-2 inline-flex">
-                          <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2 flex">
-                              <div class="grow shrink basis-0 text-neutral-500 text-lg font-medium leading-[28.80px]">Your name</div>
-                          </div>
-                      </div>
-                  </div>
+          <form class="self-stretch">
+            <div class="field-block flex flex-col gap-4 md:gap-6 mb-6 md:mb-12">
+              <div class="fiel-wrap flex flex-col gap-2">
+                <label for="fullname" class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Full name</label>
+                <input type="text" id="fullname" class="px-5 md:px-6 py-3 md:py-4 bg-white rounded-lg shadow border border-zinc-200 text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]" placeholder="Your name" required>
               </div>
-              <div class="self-stretch h-[98px] flex-col justify-start items-start gap-2 flex">
-                  <div class="self-stretch h-[98px] flex-col justify-start items-start gap-2 flex">
-                      <div class="text-neutral-500 text-lg font-medium leading-[28.80px]">Email address</div>
-                      <div class="self-stretch px-6 py-4 bg-white rounded-lg shadow border border-zinc-200 justify-start items-center gap-2 inline-flex">
-                          <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2 flex">
-                              <div class="grow shrink basis-0 text-neutral-500 text-lg font-medium leading-[28.80px]">Your email</div>
-                          </div>
-                      </div>
-                  </div>
+              <div class="fiel-wrap flex flex-col gap-2">
+                <label for="email" class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Email address</label>
+                <input type="email" id="email" class="px-5 md:px-6 py-3 md:py-4 bg-white rounded-lg shadow border border-zinc-200 text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]" placeholder="Your email" required>
               </div>
-              <div class="self-stretch h-[98px] flex-col justify-start items-start gap-2 flex">
-                  <div class="self-stretch h-[98px] flex-col justify-start items-start gap-2 flex">
-                      <div class="text-neutral-500 text-lg font-medium leading-[28.80px]">Phone number</div>
-                      <div class="self-stretch px-6 py-4 bg-white rounded-lg shadow border border-zinc-200 justify-start items-center gap-2 inline-flex">
-                          <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2 flex">
-                              <div class="grow shrink basis-0 text-neutral-500 text-lg font-medium leading-[28.80px]">Your phone number</div>
-                          </div>
-                      </div>
-                  </div>
+              <div class="fiel-wrap flex flex-col gap-2">
+                <label for="fullname" class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Phone number</label>
+                <input type="text" id="fullname" class="px-5 md:px-6 py-3 md:py-4 bg-white rounded-lg shadow border border-zinc-200 text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]" placeholder="Your phone number" required>
               </div>
-              <div class="self-stretch h-[287px] flex-col justify-start items-start gap-2 flex">
-                  <div class="self-stretch h-[287px] flex-col justify-start items-start gap-2 flex">
-                      <div class="text-neutral-500 text-lg font-medium leading-[28.80px]">Message</div>
-                      <div class="self-stretch h-[250px] px-6 py-4 bg-white rounded-lg shadow border border-zinc-200 justify-start items-start gap-2 inline-flex">
-                          <div class="grow shrink basis-0 h-[29px] justify-start items-center gap-2 flex">
-                              <div class="grow shrink basis-0 text-neutral-500 text-lg font-medium leading-[28.80px]">Leave us a message...</div>
-                          </div>
-                      </div>
-                  </div>
+              <div class="fiel-wrap flex flex-col gap-2">
+                <label for="message" class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Your message</label>
+                <textarea id="message" rows="8" class="px-5 md:px-6 py-3 md:py-4 bg-white rounded-lg shadow border border-zinc-200 text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]" placeholder="Leave us a message..."></textarea>
               </div>
             </div>
-            <div class="self-stretch px-6 py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
-              <div class="text-white text-xl font-medium uppercase leading-[29px]">Send Message</div>
-              <div class="w-6 h-6 relative"></div>
-            </div>
-          </div>
-          <form>
-            <div class="mb-6">
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-              <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required>
-            </div>
-            <div class="mb-6">
-              <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
-              <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
-            </div>
-            <div class="flex items-start mb-6">
-              <div class="flex items-center h-5">
-                <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+            <button type="submit" class="w-full px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
+              <div class="text-white text-xl font-clashM font-medium uppercase leading-[145%]">Send Message</div>
+              <div class="w-4 md:w-6 h-4 md:h-6 relative">
+                <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 18.5L18 6.5M18 6.5H9M18 6.5V15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </div>
-              <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
-            </div>
-            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+            </button>
           </form>
         </div>
-        <img class="grow shrink basis-0 self-stretch rounded-lg hidden md:block" src="../assets/images/img-form.png" />
-        <img class="grow shrink basis-0 self-stretch rounded-lg block md:hidden" src="../assets/images/img-form-mobile.png" />
+        <div class="img-wrap">
+          <img class="grow shrink basis-0 self-stretch rounded-lg hidden md:block" src="../assets/images/img-form.png" />
+          <img class="grow shrink basis-0 self-stretch rounded-lg block md:hidden" src="../assets/images/img-form-mobile.png" />
+        </div>
       </div>
     </div>
   </section>
