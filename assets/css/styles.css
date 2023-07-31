@@ -729,10 +729,6 @@ section {
   left: 0px;
 }
 
-.left-\[-0px\] {
-  left: -0px;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -855,24 +851,8 @@ section {
   height: 0px;
 }
 
-.h-\[106px\] {
-  height: 106px;
-}
-
-.h-\[125px\] {
-  height: 125px;
-}
-
-.h-\[206px\] {
-  height: 206px;
-}
-
 .h-\[23px\] {
   height: 23px;
-}
-
-.h-\[72px\] {
-  height: 72px;
 }
 
 .h-full {
@@ -913,10 +893,6 @@ section {
 
 .w-\[107px\] {
   width: 107px;
-}
-
-.w-\[191\.80px\] {
-  width: 191.80px;
 }
 
 .w-\[191\.81px\] {
@@ -1056,10 +1032,6 @@ section {
   gap: 2rem;
 }
 
-.gap-\[104px\] {
-  gap: 104px;
-}
-
 .gap-\[10px\] {
   gap: 10px;
 }
@@ -1074,10 +1046,6 @@ section {
 
 .rounded-\[100px\] {
   border-radius: 100px;
-}
-
-.rounded-\[3px\] {
-  border-radius: 3px;
 }
 
 .rounded-\[45px\] {
@@ -1244,11 +1212,6 @@ section {
   padding-bottom: 1.5rem;
 }
 
-.py-\[100px\] {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1275,6 +1238,14 @@ section {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .font-clashM {
@@ -1355,20 +1326,12 @@ section {
   line-height: 160%;
 }
 
-.leading-\[28\.80px\] {
-  line-height: 28.80px;
-}
-
 .leading-\[96\%\] {
   line-height: 96%;
 }
 
 .leading-normal {
   line-height: 1.5;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
 }
 
 .text-amber-500 {
