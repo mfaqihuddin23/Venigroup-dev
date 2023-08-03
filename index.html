@@ -380,40 +380,57 @@
                 </a>
             </div>
             <div class="self-stretch flex-col justify-center gap-8 flex">
-                <div class="self-stretch justify-between items-start gap-7 md:gap-8 flex flex-wrap">
-                    <div class="flex-col justify-center items-start gap-1 inline-flex">
-                        <div class="text-neutral-500 text-sm md:text-lg font-clashR font-normal leading-[160%]">Initial investment</div>
-                        <div class="text-stone-900 text-lg md:text-xl font-clashM font-medium leading-[120%]">$345,250</div>
-                    </div>
-                    <div class="flex-col justify-center items-start gap-1 inline-flex">
-                        <div class="text-neutral-500 text-sm md:text-lg font-clashR font-normal leading-[160%]">Ownership</div>
-                        <div class="text-stone-900 text-lg md:text-xl font-clashM font-medium leading-[120%]">33.0%</div>
-                    </div>
-                    <div class="flex-col justify-center items-start gap-1 inline-flex">
-                        <div class="text-neutral-500 text-sm md:text-lg font-clashR font-normal leading-[160%]">Entry date</div>
-                        <div class="text-stone-900 text-lg md:text-xl font-clashM font-medium leading-[120%]">1/15/2022</div>
-                    </div>
-                    <div class="flex-col justify-center items-start gap-1 inline-flex">
-                        <div class="text-neutral-500 text-sm md:text-lg font-clashR font-normal leading-[160%]">Exit date</div>
-                        <div class="text-stone-900 text-lg md:text-xl font-clashM font-medium leading-[120%]">1/15/2023</div>
-                    </div>
+              <div class="self-stretch justify-between items-start gap-7 md:gap-8 flex flex-wrap">
+                <div class="flex-col justify-center items-start gap-1 inline-flex">
+                    <div class="text-neutral-500 text-sm md:text-lg font-clashR font-normal leading-[160%]">Initial investment</div>
+                    <div class="text-stone-900 text-lg md:text-xl font-clashM font-medium leading-[120%]">$345,250</div>
                 </div>
-                <a href="./pages/project-details.html" class="px-5 md:px-6 py-3 md:py-4 rounded-lg border border-zinc-200 justify-center items-center gap-2 flex md:hidden">
-                  <div class="text-stone-900 text-sm md:text-xl font-clashM font-medium uppercase leading-[145%]">View Details</div>
-                  <div class="w-4 md:w-6 h-4 md:h-6 relative">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 18L18 6M18 6H9M18 6V15" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                <div class="flex-col justify-center items-start gap-1 inline-flex">
+                    <div class="text-neutral-500 text-sm md:text-lg font-clashR font-normal leading-[160%]">Ownership</div>
+                    <div class="text-stone-900 text-lg md:text-xl font-clashM font-medium leading-[120%]">33.0%</div>
+                </div>
+                <div class="flex-col justify-center items-start gap-1 inline-flex">
+                    <div class="text-neutral-500 text-sm md:text-lg font-clashR font-normal leading-[160%]">Entry date</div>
+                    <div class="text-stone-900 text-lg md:text-xl font-clashM font-medium leading-[120%]">1/15/2022</div>
+                </div>
+                <div class="flex-col justify-center items-start gap-1 inline-flex">
+                    <div class="text-neutral-500 text-sm md:text-lg font-clashR font-normal leading-[160%]">Exit date</div>
+                    <div class="text-stone-900 text-lg md:text-xl font-clashM font-medium leading-[120%]">1/15/2023</div>
+                </div>
+              </div>
+              <a href="./pages/project-details.html" class="px-5 md:px-6 py-3 md:py-4 rounded-lg border border-zinc-200 justify-center items-center gap-2 flex md:hidden">
+                <div class="text-stone-900 text-sm md:text-xl font-clashM font-medium uppercase leading-[145%]">View Details</div>
+                <div class="w-4 md:w-6 h-4 md:h-6 relative">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 18L18 6M18 6H9M18 6V15" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+              </a>
+              <a href="#" data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" class="self-stretch px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
+                <div class="text-white text-xl font-clashM font-medium uppercase leading-[145%]">Realized pnl</div>
+                <div class="w-4 md:w-6 h-4 md:h-6 relative">
+                  <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 18.5L18 6.5M18 6.5H9M18 6.5V15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+              </a>
+              <!-- Show tooltip on bottom -->
+              <div id="tooltip-bottom" role="tooltip" class="absolute z-10 invisible inline-block p-8 bg-white rounded-lg shadow-2xl opacity-0 tooltip w-full max-w-[328px]">
+                <div class=" bg-white rounded-lg flex-col justify-start items-start inline-flex">
+                  <div class="self-stretch h-[219px] rounded-lg flex-col justify-start items-start gap-6 flex">
+                      <div class="text-stone-900 text-xl font-semibold uppercase leading-[29px]">Realized PnL</div>
+                      <div class="self-stretch h-[71px] flex-col justify-start items-start gap-2 flex">
+                          <div class="self-stretch text-neutral-500 text-lg font-normal leading-[28.80px]">Realized PnL 2022</div>
+                          <div class="text-stone-900 text-2xl font-medium leading-[33.60px]">-$33,000</div>
+                      </div>
+                      <div class="self-stretch h-[71px] flex-col justify-start items-start gap-2 flex">
+                          <div class="self-stretch text-neutral-500 text-lg font-normal leading-[28.80px]">Realized PnL 2023</div>
+                          <div class="text-stone-900 text-2xl font-medium leading-[33.60px]">-$156,000</div>
+                      </div>
                   </div>
-                </a>
-                <a href="#" class="self-stretch px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
-                  <div class="text-white text-xl font-clashM font-medium uppercase leading-[145%]">Realized pnl</div>
-                  <div class="w-4 md:w-6 h-4 md:h-6 relative">
-                    <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 18.5L18 6.5M18 6.5H9M18 6.5V15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                  </div>
-                </a>
+                </div>
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
             </div>
           </div>
           <div class="grow shrink basis-0 p-8 rounded-lg border border-zinc-200 flex-col justify-center items-start gap-8 inline-flex">
@@ -456,14 +473,31 @@
                       </svg>
                   </div>
                 </a>
-                <a href="#" class="self-stretch px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
+                <a href="#" data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" class="self-stretch px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
                   <div class="text-white text-xl font-clashM font-medium uppercase leading-[145%]">Realized pnl</div>
                   <div class="w-4 md:w-6 h-4 md:h-6 relative">
                     <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6 18.5L18 6.5M18 6.5H9M18 6.5V15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                      </svg>
                   </div>
                 </a>
+                <!-- Show tooltip on bottom -->
+                <div id="tooltip-bottom" role="tooltip" class="absolute z-10 invisible inline-block p-8 bg-white rounded-lg shadow-2xl opacity-0 tooltip w-full max-w-[328px]">
+                  <div class=" bg-white rounded-lg flex-col justify-start items-start inline-flex">
+                    <div class="self-stretch h-[219px] rounded-lg flex-col justify-start items-start gap-6 flex">
+                        <div class="text-stone-900 text-xl font-semibold uppercase leading-[29px]">Realized PnL</div>
+                        <div class="self-stretch h-[71px] flex-col justify-start items-start gap-2 flex">
+                            <div class="self-stretch text-neutral-500 text-lg font-normal leading-[28.80px]">Realized PnL 2022</div>
+                            <div class="text-stone-900 text-2xl font-medium leading-[33.60px]">-$33,000</div>
+                        </div>
+                        <div class="self-stretch h-[71px] flex-col justify-start items-start gap-2 flex">
+                            <div class="self-stretch text-neutral-500 text-lg font-normal leading-[28.80px]">Realized PnL 2023</div>
+                            <div class="text-stone-900 text-2xl font-medium leading-[33.60px]">-$156,000</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
             </div>
           </div>
         </div>
@@ -508,7 +542,7 @@
                       </svg>
                   </div>
                 </a>
-                <a href="#" class="self-stretch px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
+                <a href="#" data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" class="self-stretch px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
                   <div class="text-white text-xl font-clashM font-medium uppercase leading-[145%]">Realized pnl</div>
                   <div class="w-4 md:w-6 h-4 md:h-6 relative">
                     <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -516,6 +550,23 @@
                       </svg>
                   </div>
                 </a>
+                <!-- Show tooltip on bottom -->
+                <div id="tooltip-bottom" role="tooltip" class="absolute z-10 invisible inline-block p-8 bg-white rounded-lg shadow-2xl opacity-0 tooltip w-full max-w-[328px]">
+                  <div class=" bg-white rounded-lg flex-col justify-start items-start inline-flex">
+                    <div class="self-stretch h-[219px] rounded-lg flex-col justify-start items-start gap-6 flex">
+                        <div class="text-stone-900 text-xl font-semibold uppercase leading-[29px]">Realized PnL</div>
+                        <div class="self-stretch h-[71px] flex-col justify-start items-start gap-2 flex">
+                            <div class="self-stretch text-neutral-500 text-lg font-normal leading-[28.80px]">Realized PnL 2022</div>
+                            <div class="text-stone-900 text-2xl font-medium leading-[33.60px]">-$33,000</div>
+                        </div>
+                        <div class="self-stretch h-[71px] flex-col justify-start items-start gap-2 flex">
+                            <div class="self-stretch text-neutral-500 text-lg font-normal leading-[28.80px]">Realized PnL 2023</div>
+                            <div class="text-stone-900 text-2xl font-medium leading-[33.60px]">-$156,000</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
             </div>
           </div>
           <div class="grow shrink basis-0 p-8 rounded-lg border border-zinc-200 flex-col justify-center items-start gap-8 inline-flex">
@@ -558,7 +609,7 @@
                       </svg>
                   </div>
                 </a>
-                <a href="#" class="self-stretch px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
+                <a href="#" data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" class="self-stretch px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
                   <div class="text-white text-xl font-clashM font-medium uppercase leading-[145%]">Realized pnl</div>
                   <div class="w-4 md:w-6 h-4 md:h-6 relative">
                     <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -566,6 +617,23 @@
                       </svg>
                   </div>
                 </a>
+                <!-- Show tooltip on bottom -->
+                <div id="tooltip-bottom" role="tooltip" class="absolute z-10 invisible inline-block p-8 bg-white rounded-lg shadow-2xl opacity-0 tooltip w-full max-w-[328px]">
+                  <div class=" bg-white rounded-lg flex-col justify-start items-start inline-flex">
+                    <div class="self-stretch h-[219px] rounded-lg flex-col justify-start items-start gap-6 flex">
+                        <div class="text-stone-900 text-xl font-semibold uppercase leading-[29px]">Realized PnL</div>
+                        <div class="self-stretch h-[71px] flex-col justify-start items-start gap-2 flex">
+                            <div class="self-stretch text-neutral-500 text-lg font-normal leading-[28.80px]">Realized PnL 2022</div>
+                            <div class="text-stone-900 text-2xl font-medium leading-[33.60px]">-$33,000</div>
+                        </div>
+                        <div class="self-stretch h-[71px] flex-col justify-start items-start gap-2 flex">
+                            <div class="self-stretch text-neutral-500 text-lg font-normal leading-[28.80px]">Realized PnL 2023</div>
+                            <div class="text-stone-900 text-2xl font-medium leading-[33.60px]">-$156,000</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
             </div>
           </div>
         </div>

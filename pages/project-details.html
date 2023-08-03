@@ -110,7 +110,7 @@
               <img class="w-12 md:w-[72px] h-12 md:h-[72px] rounded-[100px]" src="../assets/images/img-project-detail-1.png" />
               <div class="grow shrink basis-0 text-stone-900 text-xl md:text-[32px] font-semibold leading-[145%]">Coinerr</div>
             </div>
-            <a href="#" class="self-stretch px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
+            <a href="#" data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" class="self-stretch px-5 md:px-6 py-3 md:py-4 bg-stone-900 rounded-lg border justify-center items-center gap-2 inline-flex">
               <div class="text-white text-xl font-clashM font-medium uppercase leading-[145%]">Realized pnl</div>
               <div class="w-4 md:w-6 h-4 md:h-6 relative">
                 <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,6 +118,23 @@
                 </svg>
               </div>
             </a>
+            <!-- Show tooltip on bottom -->
+            <div id="tooltip-bottom" role="tooltip" class="absolute z-10 invisible inline-block p-8 bg-white rounded-lg shadow-2xl opacity-0 tooltip w-full max-w-[328px]">
+              <div class=" bg-white rounded-lg flex-col justify-start items-start inline-flex">
+                <div class="self-stretch h-[219px] rounded-lg flex-col justify-start items-start gap-6 flex">
+                    <div class="text-stone-900 text-xl font-semibold uppercase leading-[29px]">Realized PnL</div>
+                    <div class="self-stretch h-[71px] flex-col justify-start items-start gap-2 flex">
+                        <div class="self-stretch text-neutral-500 text-lg font-normal leading-[28.80px]">Realized PnL 2022</div>
+                        <div class="text-stone-900 text-2xl font-medium leading-[33.60px]">-$33,000</div>
+                    </div>
+                    <div class="self-stretch h-[71px] flex-col justify-start items-start gap-2 flex">
+                        <div class="self-stretch text-neutral-500 text-lg font-normal leading-[28.80px]">Realized PnL 2023</div>
+                        <div class="text-stone-900 text-2xl font-medium leading-[33.60px]">-$156,000</div>
+                    </div>
+                </div>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
           </div>
           <div class="flex-col gap-8 flex">
             <div class="self-stretch text-neutral-500 text-sm md:text-lg font-medium leading-[160%]">Coinerr was an idea from 2018. We postponed because of a bear market. The company partnered with two other partners starting in 2021 to launch the token alongside its mobile application; we decided to exit investment after a year of entering because of the considerable gaps in point of view between partners.</div>
@@ -176,6 +193,10 @@
                     <div class="text-stone-900 text-lg md:text-2xl font-medium leading-[120%]">1/15/2023</div>
                 </div>
               </div>
+            </div>
+            <div id="tooltip-bottom0" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+              Tooltip on bottom
+              <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
             <div class="self-stretch text-neutral-500 text-sm md:text-lg font-medium leading-[160%]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eaque libero sunt ab reiciendis cupiditate ex animi itaque, unde quae error iusto, molestias voluptatem, nam eos.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eaque libero sunt ab reiciendis cupiditate ex animi itaque, unde quae error iusto, molestias voluptatem, nam eos.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
 
