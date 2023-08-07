@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabs Example</title>
+  <style>
+    .tab-container {
+      display: flex;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      background-color: #f0f0f0;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .tab:hover {
+      background-color: #ccc;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tabs Example</h1>
+
+  <!-- <div class="tab-container">
+    <div class="tab" onclick="showTab('tab1')">Tab 1</div>
+    <div class="tab" onclick="showTab('tab2')">Tab 2</div>
+    <div class="tab" onclick="showTab('tab3')">Tab 3</div>
+  </div> -->
+  <ul class="flex flex-wrap text-center gap-2 mb-12 tab-container">
+    <li class="">
+      <button class="tab inline-block px-5 md:px-6 py-3 md:py-3.5 border border-zinc-200 rounded-lg" onclick="showTab('tab1')">
+        <div class="justify-center items-center gap-2 flex">
+          <div class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Shipping</div>
+          <div class="w-6 h-6 bg-neutral-500 rounded-full justify-center items-center gap-2 flex">
+            <div class="text-white text-xs md:text-sm font-clashS font-semibold leading-[120%]">2</div>
+          </div>
+      </div>
+      </button>
+    </li>
+    <li class="">
+      <button class="tab inline-block px-5 md:px-6 py-3 md:py-3.5 border border-zinc-200 rounded-lg" onclick="showTab('tab2')">
+        <div class="justify-center items-center gap-2 flex">
+          <div class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Real estate</div>
+          <div class="w-6 h-6 bg-neutral-500 rounded-full justify-center items-center gap-2 flex">
+            <div class="text-white text-xs md:text-sm font-clashS font-semibold leading-[120%]">1</div>
+          </div>
+      </div>
+      </button>
+    </li>
+    <li class="">
+      <button class="inline-block px-5 md:px-6 py-3 md:py-3.5 border border-zinc-200 rounded-lg" onclick="showTab('tab3')">
+        <div class="justify-center items-center gap-2 flex">
+          <div class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Poultry</div>
+          <div class="w-6 h-6 bg-neutral-500 rounded-full justify-center items-center gap-2 flex">
+            <div class="text-white text-xs md:text-sm font-clashS font-semibold leading-[120%]">2</div>
+          </div>
+      </div>
+      </button>
+    </li>
+    <li class="">
+        <a href="#"  class="inline-block px-5 md:px-6 py-3 md:py-3.5 border border-amber-500 rounded-lg active" aria-current="page">
+          <div class=" justify-center items-center gap-2 flex">
+            <div class="text-amber-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Crypto</div>
+            <div class="justify-center items-center gap-2 flex w-6 h-6 bg-amber-500 rounded-full">
+                <div class="text-white text-xs md:text-sm font-clashS font-semibold leading-[120%]">5</div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li class="">
+      <a href="#" class="inline-block px-5 md:px-6 py-3 md:py-3.5 border border-zinc-200 rounded-lg">
+        <div class="justify-center items-center gap-2 flex">
+          <div class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Finance</div>
+          <div class="w-6 h-6 bg-neutral-500 rounded-full justify-center items-center gap-2 flex">
+            <div class="text-white text-xs md:text-sm font-clashS font-semibold leading-[120%]">1</div>
+          </div>
+      </div>
+      </a>
+    </li>
+    <li class="">
+      <a href="#" class="inline-block px-5 md:px-6 py-3 md:py-3.5 border border-zinc-200 rounded-lg">
+        <div class="justify-center items-center gap-2 flex">
+          <div class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Tech</div>
+          <div class="w-6 h-6 bg-neutral-500 rounded-full justify-center items-center gap-2 flex">
+            <div class="text-white text-xs md:text-sm font-clashS font-semibold leading-[120%]">1</div>
+          </div>
+      </div>
+      </a>
+    </li>
+    <li class="">
+      <a href="#" class="inline-block px-5 md:px-6 py-3 md:py-3.5 border border-zinc-200 rounded-lg">
+        <div class="justify-center items-center gap-2 flex">
+          <div class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Clothes</div>
+          <div class="w-6 h-6 bg-neutral-500 rounded-full justify-center items-center gap-2 flex">
+            <div class="text-white text-xs md:text-sm font-clashS font-semibold leading-[120%]">2</div>
+          </div>
+      </div>
+      </a>
+    </li>
+    <li class="">
+      <a href="#" class="inline-block px-5 md:px-6 py-3 md:py-3.5 border border-zinc-200 rounded-lg">
+        <div class="justify-center items-center gap-2 flex">
+          <div class="text-neutral-500 text-sm md:text-lg font-clashM font-medium leading-[160%]">Make up</div>
+          <div class="w-6 h-6 bg-neutral-500 rounded-full justify-center items-center gap-2 flex">
+            <div class="text-white text-xs md:text-sm font-clashS font-semibold leading-[120%]">1</div>
+          </div>
+      </div>
+      </a>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="tab1">
+    <h2>Tab 1 Content</h2>
+    <p>This is the content of Tab 1.</p>
+  </div>
+
+  <div class="tab-content" id="tab2">
+    <h2>Tab 2 Content</h2>
+    <p>This is the content of Tab 2.</p>
+  </div>
+
+  <div class="tab-content" id="tab3">
+    <h2>Tab 3 Content</h2>
+    <p>This is the content of Tab 3.</p>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+
+      const selectedTab = document.getElementById(tabId);
+      selectedTab.classList.add('active');
+    }
+  </script>
+</body>
+</html>

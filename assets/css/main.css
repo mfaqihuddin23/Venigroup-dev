@@ -94,6 +94,19 @@
     width: auto !important;
   }
 
+  /* .tab-links{
+    @apply border-zinc-200
+  } */
+  .tab-links.active{
+    @apply border-amber-500
+  }
+  .tab-links.active .tab-title{
+    @apply text-amber-500
+  }
+  .tab-links.active .tab-count{
+    @apply bg-amber-500 text-white
+  }
+
   .hero{
     background: url(../images/img-hero-mobile.png);
     background-repeat: no-repeat;
