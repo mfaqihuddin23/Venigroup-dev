@@ -532,6 +532,18 @@ video {
   font-style: normal;
 }
 
+.font-normal {
+  font-family: ClashDisplay-Regular;
+}
+
+.font-medium {
+  font-family: ClashDisplay-Medium;
+}
+
+.font-semibold {
+  font-family: ClashDisplay-Semibold;
+}
+
 body {
   font-family: ClashDisplay-Regular;
 }
@@ -1077,10 +1089,6 @@ section {
   overflow: hidden;
 }
 
-.overflow-clip {
-  overflow: clip;
-}
-
 .rounded-\[100px\] {
   border-radius: 100px;
 }
@@ -1108,11 +1116,6 @@ section {
 .border-amber-100 {
   --tw-border-opacity: 1;
   border-color: rgb(254 243 199 / var(--tw-border-opacity));
-}
-
-.border-amber-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(245 158 11 / var(--tw-border-opacity));
 }
 
 .border-gray-200 {
@@ -1434,6 +1437,16 @@ section {
 
 .swiper-pagination-bullet{
   background: #000 !important;
+}
+
+@media (min-width: 768px) {
+  .md\:font-medium {
+    font-family: ClashDisplay-Medium;
+  }
+
+  .md\:font-semibold {
+    font-family: ClashDisplay-Semibold;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

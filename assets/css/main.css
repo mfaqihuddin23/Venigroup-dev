@@ -79,6 +79,25 @@
          font-style: normal;
   }
   
+  .font-extralight{
+    @apply font-clashE;
+  }
+  .font-light{
+    @apply font-clashL;
+  }
+  .font-normal{
+    @apply font-clashR;
+  }
+  .font-medium{
+    @apply font-clashM;
+  }
+  .font-semibold{
+    @apply font-clashS;
+  }
+  .font-bold{
+    @apply font-clashB;
+  }
+
   body{
     @apply font-clashR;
   }
